@@ -23,5 +23,5 @@ If not, Node is available at [http://nodejs.org](http://nodejs.org)
 
 The Angular-CLI is installed using
 ```
-npm install @angular/cli
+npm install @angular/cli -g
 ```
