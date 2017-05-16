@@ -1,0 +1,12 @@
+<h2>Spotify Search!!!</h2>
+<div>
+    <input type="text" #tbQuery />
+    <button (click)="search(tbQuery.value)">Search</button>
+</div>
+
+<div *ngIf="artists">
+    <h3>Result</h3>
+    <div *ngFor="let artist of artists">
+        <artist-display [artist]="artist" (onSelect)="artistSelected(artist)"></artist-display>
+    </div>
+</div>
